@@ -1,0 +1,45 @@
+body {
+    background-color: gainsboro;
+}
+
+select {
+    padding-top: 70%;
+    padding-bottom: 70%;
+}
+
+.radio-inline {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.checkbox-inline {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+#target {
+    width: 50%;
+}
+
+#portscan_button {
+    width: 20%;
+}
+
+#net_chart {
+    background-color: white;
+    align-content: center;
+    height: auto;
+    width: auto;
+}
+
+#net_chart_div {
+    align-self: center;
+}
+
+#net_chart_button {
+    margin-top: 5%;
+    font-size: 300%;
+    position:relative;
+    top:50%;
+    left:50%;
+}

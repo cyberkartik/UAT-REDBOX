@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/page3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/page3.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="col-sm-7">
+        <h2>Exploitation</h2>
+        <h5><i><b>Get access to your target and launch your command</b></i></h5>
+        <br>
+        <div class="form-group form-inline">
+            <label for="target">Specify the Target:</label>
+            <input type="text" class="form-control" id="target">
+            <br>
+            <label for="scanType">Select the exploit:</label>
+            <input type="text" class="form-control" id="scanType">
+            <br><br>
+            <input type="button" id="exploit_button" value="EXPLOIT!!!">
+        </div>
+    </div>
+    <div class="col-sm-5 text-center">
+        <h1 id="exp_dbNumber">3681</h1>
+        <h6 id="exp_dbLine">exploits in the Rapid7 database</h6>
+        <div>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Select an exploit</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Exploits</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-group form-inline">
+                                <label for="exp_os">Search by OS:</label>
+                                <select class="form-control" id="exp_os" title="Choose the OS...">
+                                    <optgroup label="Multiplatform">
+                                        <option value="multi">Multi</option>
+                                    </optgroup>
+                                    <optgroup label="Microsoft">
+                                        <option value="windows">Windows</option>
+                                    </optgroup>
+                                    <optgroup label="Apple">
+                                        <option value="apple">Mac OS</option>
+                                        <option value="ios">iOS</option>
+                                    </optgroup>
+                                    <optgroup label="Unix-based">
+                                        <option value="android">Android</option>
+                                        <option value="linux">Linux</option>
+                                    </optgroup>
+                                </select>
+                                <label for="exp_name">Search by name:</label>
+                                <input type="text" class="form-control" id="exp_name">
+                                <input type="button" id="exp_search" value="SEARCH">
+                            </form>
+                            <table id="table_exploit" class="table table-bordered table-hover text-center"></table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 text-center">
+        <br>
+        <p id="resultText">nothing yet...</p>
+        <br>
+    </div>
+    <div class="col-sm-12 text-center">
+        <label>
+            <textarea name="testo" id="text_area" rows="5" cols="40">Write metasploit command...</textarea>
+            <input type="button" id="text_area_button" value="EXECUTE COMMAND">
+        </label>
+
+    </div>
+
+</div>
+</body>
+</html>

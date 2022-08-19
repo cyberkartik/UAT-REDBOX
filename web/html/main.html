@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Red Box</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/maincss.css">
+    <script src="../js/main.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" id="logoNavbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand media-left" id="logo">
+                <img src="../resources/redbox.png" width="220">
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-3 sidenav hidden-xs" id="phasesNavbar">
+            <h3 class="titleOnBlack">Penetration testing phases</h3>
+            <br>
+            <button id="IF_link" type="submit" class="btn btn-block">Information Gathering</button>
+            <button id="VA_link" type="submit" class="btn btn-block">Vulnerability Assessment</button>
+            <button id="EX_link" type="submit" class="btn btn-block">Exploitation</button>
+            <br><br>
+            <h3 class="titleOnBlack">About your integrity</h3>
+            <br>
+            <button id="PC_link" type="submit" class="btn btn-block">About this system</button>
+            <button id="PR_link" type="submit" class="btn btn-block">Protection</button>
+            <br>
+            <div class="row content"></div>
+        </div>
+        <br>
+
+        <div class="col-sm-9">
+            <div class="well">
+                <object id="page" data="../html/page0.html"></object>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

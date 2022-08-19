@@ -1,0 +1,33 @@
+body {
+    background-color: gainsboro;
+}
+
+textarea {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+#resultText {
+    font-size: 30px;
+    font-family: "DejaVu Sans Mono";
+    color: #1b1e21;
+}
+
+#exp_dbNumber {
+    font-size: 700%;
+    color: indigo;
+}
+
+#exp_dbLine {
+    font-size: 150%;
+    color: indigo;
+}
+
+#table_exploit {
+    font-size: 80%;
+}
+
+#text_area_button {
+    width: 100%;
+}
